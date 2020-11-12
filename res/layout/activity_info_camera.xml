@@ -29,7 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/camera_up_name"
-        android:layout_above="@+id/camera_down_bar">
+        android:layout_above="@+id/camera_down_bar"
+        android:background="@color/colorWhite">
 
         <TextView
             android:id="@+id/textView_info_camera_content"

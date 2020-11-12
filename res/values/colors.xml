@@ -24,4 +24,5 @@
     <color name="colorKhaki">#F0E68C</color>
     <color name="colorOrange">#ff7a00</color>
     <color name="colorWhite">#ffff</color>
+    <color name="transparent">#ffffff</color>
 </resources>

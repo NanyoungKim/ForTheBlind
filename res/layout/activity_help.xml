@@ -36,7 +36,8 @@ android:orientation="vertical">
     android:layout_width="match_parent"
     android:layout_height="280dp"
     android:orientation="vertical"
-    android:clickable="true">
+    android:clickable="true"
+    android:background="@color/colorWhite">
 
     <TextView
         android:id="@+id/textView_tutorial_simple"
@@ -71,7 +72,8 @@ android:orientation="vertical">
     android:layout_above="@+id/down_map"
     android:layout_height="240dp"
     android:orientation="vertical"
-    android:clickable="true">
+    android:clickable="true"
+    android:background="@color/colorWhite">
 
     <TextView
         android:id="@+id/textView_info_func_simple"

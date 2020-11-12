@@ -15,6 +15,7 @@ public class PopupActivity extends Activity {
     private Context context;
     private long btnPressTime = 0;
 
+    public PopupActivity(){;}       //!!!!!!!!!!!!추가한 라인
     public PopupActivity(Context context){
         this.context = context;
     }
