@@ -1,3 +1,2 @@
 ninja: Entering directory `/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/debug/armeabi-v7a'
-[1/2] Building CXX object CMakeFiles/opencv_jni_shared.dir/dummy.cpp.o
-[2/2] Linking CXX static library libopencv_jni_shared.a
+ninja: no work to do.
