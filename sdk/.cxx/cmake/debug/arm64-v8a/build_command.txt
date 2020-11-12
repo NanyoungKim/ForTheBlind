@@ -1,0 +1,22 @@
+Executable : /Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+arguments : 
+-H/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/libcxx_helper
+-DCMAKE_FIND_ROOT_PATH=/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/debug/prefab/arm64-v8a/prefab
+-DCMAKE_BUILD_TYPE=Debug
+-DCMAKE_TOOLCHAIN_FILE=/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake
+-DANDROID_ABI=arm64-v8a
+-DANDROID_NDK=/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669
+-DANDROID_PLATFORM=android-21
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DCMAKE_ANDROID_NDK=/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/build/intermediates/cmake/debug/obj/arm64-v8a
+-DCMAKE_MAKE_PROGRAM=/Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=21
+-DANDROID_STL=c++_shared
+-B/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/debug/arm64-v8a
+-GNinja
+jvmArgs : 
+
+Build command args:

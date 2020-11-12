@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/debug/x86_64",
+  "command": "/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=x86_64-none-linux-android21 --gcc-toolchain=/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot    -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/opencv_jni_shared.dir/dummy.cpp.o -c /Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/libcxx_helper/dummy.cpp",
+  "file": "/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/libcxx_helper/dummy.cpp"
+}
+]

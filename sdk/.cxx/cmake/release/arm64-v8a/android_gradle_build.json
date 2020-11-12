@@ -1,0 +1,43 @@
+{
+  "stringTable": {
+    "0": "/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
+    "/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/build/cmake/platforms.cmake",
+    "/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/libcxx_helper/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "opencv_jni_shared-Release-arm64-v8a": {
+      "buildCommand": "/Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/arm64-v8a\" opencv_jni_shared",
+      "buildType": "release",
+      "toolchain": "2900078207",
+      "abi": "arm64-v8a",
+      "artifactName": "opencv_jni_shared",
+      "files": [
+        {
+          "src": "/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/libcxx_helper/dummy.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/arm64-v8a/libopencv_jni_shared.a",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "2900078207": {
+      "cppCompilerExecutable": "/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

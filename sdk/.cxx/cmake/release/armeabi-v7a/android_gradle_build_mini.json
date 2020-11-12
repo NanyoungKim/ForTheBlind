@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake",
+    "/Users/kimnan-young/Library/Android/sdk/ndk/21.0.6113669/build/cmake/platforms.cmake",
+    "/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/libcxx_helper/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "opencv_jni_shared-Release-armeabi-v7a": {
+      "artifactName": "opencv_jni_shared",
+      "buildCommand": "/Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/armeabi-v7a\" opencv_jni_shared",
+      "abi": "armeabi-v7a",
+      "output": "/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/release/armeabi-v7a/libopencv_jni_shared.a",
+      "runtimeFiles": []
+    }
+  }
+}
