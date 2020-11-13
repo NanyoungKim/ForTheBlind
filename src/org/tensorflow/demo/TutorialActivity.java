@@ -29,7 +29,7 @@ public class TutorialActivity extends Activity {
             public void onInit(int status) {
                 if(status != ERROR) {
                     // 언어를 선택한다.
-                    tts.setLanguage(Locale.KOREAN);
+                    tts.setLanguage(Locale.US);
                 }
             }
         });

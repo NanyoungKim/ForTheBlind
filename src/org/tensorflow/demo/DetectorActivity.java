@@ -27,15 +27,20 @@ import android.graphics.Paint.Style;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.media.ImageReader.OnImageAvailableListener;
+import android.os.Bundle;
 import android.os.SystemClock;
+import android.speech.tts.TextToSpeech;
 import android.util.Size;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.Surface;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Vector;
 import org.tensorflow.demo.OverlayView.DrawCallback;
 import org.tensorflow.demo.env.BorderedText;
@@ -122,6 +127,15 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   private byte[] luminanceCopy;
 
   private BorderedText borderedText;
+
+
+  //추가한부분
+  private String text2 ;
+  private String[] list1 = new String[3];
+
+  //
+
+
   @Override
   public void onPreviewSizeChosen(final Size size, final int rotation) {
     final float textSizePx =
@@ -241,6 +255,16 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
             lines.add("Inference time: " + lastProcessingTimeMs + "ms");
 
             borderedText.drawLines(canvas, 10, canvas.getHeight() - 10, lines);
+
+           // if(lines.)
+
+
+
+
+
+
+
+
           }
         });
   }
@@ -316,6 +340,10 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
             final List<Classifier.Recognition> mappedRecognitions =
                 new LinkedList<Classifier.Recognition>();
 
+            //추가
+            int i = 0;
+            //
+
             for (final Classifier.Recognition result : results) {
               final RectF location = result.getLocation();
               if (location != null && result.getConfidence() >= minimumConfidence) {
@@ -324,6 +352,29 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
                 cropToFrameTransform.mapRect(location);
                 result.setLocation(location);
                 mappedRecognitions.add(result);
+
+
+
+                //추가한부분
+
+                //text2 = result.getTitle();
+                String str = result.getTitle();
+                if(str.equals("trafficlightGreen")) {
+                  list1[i] = "초록불입니다";
+                }
+                else if(str.equals("trafficlightRed")) {
+                  list1[i] = "빨간불입니다";
+                }
+                else {
+                  list1[i] = "신호등";
+                }
+
+               // list1[i] = text2;
+                i++;
+
+                //
+
+
               }
             }
 
@@ -350,4 +401,135 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
   public void onSetDebug(final boolean debug) {
     detector.enableStatLogging(debug);
   }
+
+
+
+
+//@@@@@@@아래 추가한 부분
+
+
+  private Button button01;
+  TextToSpeech tts;
+
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_camera);
+
+    button01 = (Button) findViewById(R.id.button01);
+
+    tts=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+      @Override
+      public void onInit(int status) {
+        if(status != TextToSpeech.ERROR) {
+          tts.setLanguage(Locale.KOREA);
+        }
+      }
+    });
+
+    button01.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        //tts.speak(editText.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
+
+        String text1 = "text1";
+        for(int i = 0; i < 3; i ++){
+          if (list1[i] == null){list1[i] = "   ";}
+        }
+
+        boolean chk = false;
+        if((list1[0].equals(list1[1])) && (list1[1].equals(list1[2])) ){ chk = true; }
+
+//       if(chk){
+//         text2 = text2+"       "+ list1[0] + "        ";
+//       }
+
+
+//          for(int j= 0; j<3; j++) {
+//            text2 = text2+"       "+ list1[j] + "        ";
+//          }
+
+
+
+
+       // if(chk){
+        //  text2 = text2 + "       " + list1[0] + "      ";
+          //text2 = text + "       ;
+        //}
+      //  for(int j = 0; j < 3; j++) {
+         // text2 = list1[j];
+       //   text2 = text2+"       "+ list1[j] + "        ";
+          //text2 = list1[j]+"       "+ text2 + "        ";
+//          text2 = list1[j]+"   입니    "+ text2 + "        ";
+        //  text2 = list1[j]+"       "+ list1[j] + "입니다" + "        ";
+          //text2 = list1[j];
+
+      //  }
+
+//        System.out.println("text2:" + text2);
+//        System.out.println("listr0: " + list1[0]);
+//        System.out.println("listr1: " + list1[1]);
+//        System.out.println("listr2: " + list1[2]);
+        //System.out.println("listr3: " + list1[3]);
+       // System.out.println("listr4: " + list1[4]);
+
+
+        for(int j =0; j<3; j++){
+
+          //text2 = text2+"       "+ list1[j] + "        ";
+          text2 = list1[0] + "        ";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+        Toast.makeText(getApplicationContext(), text2 , Toast.LENGTH_LONG).show();
+        tts.setSpeechRate(0.7f);
+        tts.speak(text2, TextToSpeech.QUEUE_FLUSH, null, null);
+        text2 = "";
+
+
+
+      }
+    });
+  }
+
+  @Override
+  public void onDestroy() {
+    if (tts != null) {
+      if(tts.isSpeaking()) {
+        tts.stop();
+      }
+      tts.shutdown();
+    }
+    super.onDestroy();
+  }
+
+
 }
+

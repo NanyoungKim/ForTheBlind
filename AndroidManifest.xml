@@ -61,46 +61,53 @@
         <meta-data android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAkJy5ahoo_6IZM0pIjjHF2VLIS-LaypRI">
         </meta-data>
-      <!--  <activity android:name="org.tensorflow.demo.ClassifierActivity"
-                  android:screenOrientation="portrait"
-                  android:label="@string/activity_name_classification">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity android:name="org.tensorflow.demo.DetectorActivity"
-                  android:screenOrientation="portrait"
-                  android:label="@string/activity_name_detection">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity android:name="org.tensorflow.demo.StylizeActivity"
-                  android:screenOrientation="portrait"
-                  android:label="@string/activity_name_stylize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
 
-        <activity android:name="org.tensorflow.demo.SpeechActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/activity_name_speech">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
-        -->
+
+
+
+
+<!--        <activity android:name="org.tensorflow.demo.ClassifierActivity"-->
+<!--                  android:screenOrientation="portrait"-->
+<!--                  android:label="@string/activity_name_classification">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+<!--                <activity android:name="org.tensorflow.demo.DetectorActivity"-->
+<!--                          android:screenOrientation="portrait"-->
+<!--                          android:label="@string/activity_name_detection">-->
+<!--                    <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+<!--                    </intent-filter>-->
+<!--                </activity>-->
+
+<!--                <activity android:name="org.tensorflow.demo.StylizeActivity"-->
+<!--                          android:screenOrientation="portrait"-->
+<!--                          android:label="@string/activity_name_stylize">-->
+<!--                    <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+<!--                    </intent-filter>-->
+<!--                </activity>-->
+
+<!--                <activity android:name=".SpeechActivity"-->
+<!--                    android:screenOrientation="portrait"-->
+<!--                    android:label="@string/activity_name_speech">-->
+<!--                    <intent-filter>-->
+<!--                        <action android:name="android.intent.action.MAIN" />-->
+<!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+<!--                    </intent-filter>-->
+<!--                </activity>-->
+                -->
 
 <!--        <activity android:name="org.tensorflow.demo.DetectorActivity"-->
 <!--            android:screenOrientation="portrait"-->
@@ -112,6 +119,8 @@
 <!--            </intent-filter>-->
 <!--        </activity>-->
 
+
+
         <activity android:name=".DetectorActivity"
             android:screenOrientation="portrait"
             android:label="@string/activity_name_detection">
@@ -121,7 +130,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetectorActivity"></activity>
+<!--        <activity android:name=".DetectorActivity"></activity>-->
         <activity android:name=".TutorialActivity"></activity>
         <activity android:name=".SearchActivity"></activity>
         <activity android:name=".FuncActivity"></activity>

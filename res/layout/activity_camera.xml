@@ -19,4 +19,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000"
-    tools:context="org.tensorflow.demo.CameraActivity" />
+    tools:context="org.tensorflow.demo.CameraActivity" >
+
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="600dp"
+        android:text="run"
+        android:textColor="#000000"
+        android:textSize="18dp"/>
+
+
+</FrameLayout>

@@ -169,7 +169,7 @@ public class ClassifierActivity extends CameraActivity implements OnImageAvailab
             cropCopyBitmap = Bitmap.createBitmap(croppedBitmap);
             if (resultsView == null) {
               resultsView = (ResultsView) findViewById(R.id.results);
-            }
+          }
             resultsView.setResults(results);
             requestRender();
             readyForNextImage();
