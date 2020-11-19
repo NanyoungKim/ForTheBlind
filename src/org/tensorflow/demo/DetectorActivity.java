@@ -392,13 +392,18 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
                 String str = result.getTitle();
                 if(str.equals("trafficlightGreen")) {
-                  list1[i] = "초록불입니다      ";
+                  list1[i] = "     초록불입니다           ";
+                  tts.playSilentUtterance(5000, TextToSpeech.QUEUE_ADD, null);
+
+
                 }
                 else if(str.equals("trafficlightRed")) {
-                  list1[i] = "빨간불입니다       ";
+                  list1[i] = "     빨간불입니다           ";
+                  tts.playSilentUtterance(5000, TextToSpeech.QUEUE_ADD, null);
                 }
                 else {
                   list1[i] = "신호등   ";
+                  tts.playSilentUtterance(5000, TextToSpeech.QUEUE_ADD, null);
                 }
 
 
@@ -410,14 +415,13 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
               }
             }
 
-            tts.setSpeechRate(0.9f);
+            tts.setSpeechRate(0.7f);
             if(pause == false){
               tts.speak(list1[0], TextToSpeech.QUEUE_FLUSH, null, null);
             }
             else{
               tts.stop();
             }
-
 
 
 
@@ -469,7 +473,7 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
 
 
 //@@@@@@@아래 추가한 부분
-
+//////////////////////////////////////////////////////////
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -485,31 +489,21 @@ public class DetectorActivity extends CameraActivity implements OnImageAvailable
       button01.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
-        //tts.speak(editText.getText().toString(), TextToSpeech.QUEUE_FLUSH, null);
-
-        //computingDetection = true;
-
-//        tts.isSpeaking();
         pause= false;
         tts.speak(list1[0], TextToSpeech.QUEUE_FLUSH, null, null);
-
       }
-    });
+      });
 
-    button02.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View v) {
-        //computingDetection = false;
-        pause = true;
-     // tts.stop();
-      //tts.shutdown();
-
-      }
-    });
+      button02.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+          pause = true;
+        }
+      });
 
 
   }
-
+//////////////////////////////////////////////////////////
 
 //  private Button button01;
    //  TextToSpeech tts;

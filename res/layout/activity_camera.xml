@@ -38,10 +38,10 @@
             android:id="@+id/button01"
             android:layout_width="100dp"
             android:layout_height="200dp"
-            android:layout_marginTop="600dp"
-            android:text="run"
+            android:layout_marginTop="550dp"
+            android:text="실행"
             android:textColor="#000000"
-            android:textSize="18dp"
+            android:textSize="30dp"
             android:layout_weight="1"
 
             />
@@ -50,10 +50,10 @@
             android:id="@+id/button02"
             android:layout_width="100dp"
             android:layout_height="200dp"
-            android:layout_marginTop="600dp"
-            android:text="stop"
+            android:layout_marginTop="550dp"
+            android:text="일시정지"
             android:textColor="#000000"
-            android:textSize="18dp"
+            android:textSize="30dp"
             android:layout_weight="1"
             />
     </LinearLayout>
