@@ -1,7 +1,0 @@
-Executable : /Users/kimnan-young/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
-arguments : 
--C
-/Users/kimnan-young/Downloads/tensorflow-1f40e38be8846969d24af68fa391b1091f10b208/tensorflow/examples/android/sdk/.cxx/cmake/debug/x86
-opencv_jni_shared
-jvmArgs : 
-

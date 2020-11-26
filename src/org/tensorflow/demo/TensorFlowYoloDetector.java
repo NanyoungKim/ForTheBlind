@@ -281,7 +281,7 @@ public class TensorFlowYoloDetector implements Classifier {
   // Only return this many results with at least this confidence.
   private static final int MAX_RESULTS = 5;
 
-  private static final int NUM_CLASSES = 3;
+  private static final int NUM_CLASSES = 26;
 
   private static final int NUM_BOXES_PER_BLOCK = 5;
 
@@ -318,7 +318,31 @@ public class TensorFlowYoloDetector implements Classifier {
 //          "tvmonitor"
           "trafficlightGreen",
           "trafficlightRed",
-          "trafficlight"
+          "trafficlight",
+          "green1",
+          "green2",
+          "green3",
+          "green4",
+          "green5",
+          "green6",
+          "green7",
+          "green8",
+          "green9",
+          "green10",
+          "green11",
+          "green12",
+          "green13",
+          "green14",
+          "green15",
+          "green16",
+          "green17",
+          "green18",
+          "green19",
+          "green20",
+          "green21",
+          "green22",
+          "green23"
+
   };
 
   // Config values.
